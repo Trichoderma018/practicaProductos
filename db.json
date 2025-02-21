@@ -1,3 +1,8 @@
 {
-    "products": []
+  "products": [
+    {
+      "id": "af7c",
+      "nombreProducto": "Culantro"
+    }
+  ]
 }
