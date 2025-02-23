@@ -1,6 +1,6 @@
-async function getUsers() {
+async function getProducts() {
     try {
-        const response = await fetch('https://api.hacienda.go.cr/fe/ae?identificacion=207360415', {
+        const response = await fetch('http://localhost:3000/products', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -11,24 +11,25 @@ async function getUsers() {
             throw new Error('Error fetching users');
         }
 
-        const users = await response.json();
-        return users;
+        const products = await response.json();
+        return products;
     } catch (error) {
         console.error('Error fetching users:', error);
         throw error;
     }
 }
 
-export { getUsers };
+export { getProducts };
 
 //////////LLAMADO POST//////////
 
-async function postProducts(nombreProducto) {
+async function postProducts(nombreProducto, precio, stock) {
     try {
      
         const productData = { 
-            nombreProducto
-        
+            nombreProducto,
+            precio,
+            stock
         };
 
 
@@ -71,7 +72,7 @@ async function updateUsers(nombre,apellido,edad,id)
         
 
 
-        const response = await fetch("http://localhost:3000/users/"+id, {
+        const response = await fetch("http://localhost:3000/products/"+id, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -94,9 +95,9 @@ export{updateUsers}
 //////////////LLAMADO DELETE/////////////
 
 
-async function deleteUser(id) {
+async function deleteProduct(id) {
     try {
-        const response = await fetch(`http://localhost:3000/users/${id}`, {
+        const response = await fetch(`http://localhost:3000/products/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'
@@ -104,14 +105,14 @@ async function deleteUser(id) {
         });
 
         if (!response.ok) {
-            throw new Error(`Error deleting user with id ${id}`);
+            throw new Error(`Error deleting product with id ${id}`);
         }
 
-        return { message: `User with id ${id} deleted successfully` };
+        return { message: `product with id ${id} deleted successfully` };
     } catch (error) {
-        console.error('Error deleting user:', error);
+        console.error('Error deleting product:', error);
         throw error;
     }
 }
 
-export { deleteUser };
+export { deleteProduct };

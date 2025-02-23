@@ -3,6 +3,78 @@
     {
       "id": "af7c",
       "nombreProducto": "Culantro"
+    },
+    {
+      "id": "8395",
+      "nombreProducto": "Lechuga"
+    },
+    {
+      "id": "9819",
+      "nombreProducto": "Lechuga"
+    },
+    {
+      "id": "6ba3",
+      "nombreProducto": "Lechuga"
+    },
+    {
+      "id": "1896",
+      "nombreProducto": "Lechuga"
+    },
+    {
+      "id": "5e74",
+      "nombreProducto": "Lechuga"
+    },
+    {
+      "id": "416b",
+      "nombreProducto": "Lechuga"
+    },
+    {
+      "id": "11e8",
+      "nombreProducto": "Lechuga"
+    },
+    {
+      "id": "99d5",
+      "nombreProducto": "Lechuga"
+    },
+    {
+      "id": "eeb3",
+      "nombreProducto": "Lechuga"
+    },
+    {
+      "id": "6e7a",
+      "nombreProducto": "Lechuga"
+    },
+    {
+      "id": "ef4d",
+      "nombreProducto": "Lechuga"
+    },
+    {
+      "id": "ce3d",
+      "nombreProducto": "Lechuga"
+    },
+    {
+      "id": "a0a3",
+      "nombreProducto": "Lechuga"
+    },
+    {
+      "id": "61c2",
+      "nombreProducto": "Lechuga"
+    },
+    {
+      "id": "b67b",
+      "nombreProducto": "Lechuga"
+    },
+    {
+      "id": "8624",
+      "nombreProducto": "Arverja",
+      "precio": "2000",
+      "stock": "100"
+    },
+    {
+      "id": "7375",
+      "nombreProducto": "papa",
+      "precio": "100000",
+      "stock": "40"
     }
   ]
 }
