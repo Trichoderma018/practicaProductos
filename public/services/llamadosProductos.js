@@ -1,6 +1,10 @@
 async function getProducts() {
     try {
+<<<<<<< HEAD
         const response = await fetch('http://localhost:3000/products', {
+=======
+        const response = await fetch("http://localhost:3000/products", {
+>>>>>>> 9d27dc4afe61425e044757e04536fb29c44655e0
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
