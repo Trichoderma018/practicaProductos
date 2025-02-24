@@ -20,7 +20,19 @@ async function MostrarProductos() {
     
     for (let index = 0; index < datos.length; index++) {
         let div = document.createElement("div")
+        let button = document.createElement("button")
+        let buttonEdit = document.createElement("button")
+        button.innerHTML="ELIMINAR"
+        buttonEdit.innerHTML="ACTUALIZAR"
         div.innerText= datos[index].nombreProducto + " "+ datos[index].precio+ " "+ datos[index].stock
+        div.appendChild(buttonEdit)
+        div.appendChild(button)
         mostrar.appendChild(div)
+        button.addEventListener("click", function(){
+            
+        })
+        buttonEdit.addEventListener("click", function(){
+            
+        })
     }
 }
